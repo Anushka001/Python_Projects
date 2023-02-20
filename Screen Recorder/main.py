@@ -8,7 +8,7 @@ import time
 width = GetSystemMetrics(0)
 height = GetSystemMetrics(1)
 
-file_name = f"Recording/Video_{str(time.strftime('%d-%m-%y %H-%M-%S'))}.mp4"
+file_name = f"Video_{str(time.strftime('%d-%m-%y %H-%M-%S'))}.mp4"
 fourcc = cv2.VideoWriter_fourcc('m','p','4','v')
 capture_vid = cv2.VideoWriter(file_name, fourcc,20.0,(width, height))
 
